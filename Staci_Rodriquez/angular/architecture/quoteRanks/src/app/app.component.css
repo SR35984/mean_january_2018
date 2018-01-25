@@ -1,0 +1,30 @@
+.label{
+	margin-left: 140px;
+}
+
+.add{
+	margin-left: 250px;
+}
+.box{
+	display: inline-block;
+	border: solid;
+	width: 800px;
+	padding: 5px;
+}
+.quotes{
+	display: inline-block;
+	width: 300px;
+}
+.votes{
+	display: inline-block;
+	width: 100px;
+	margin-left: 50px;
+}
+.b{
+	display: inline-block;
+}
+.buttons{
+	display: inline-block;
+	width: 150px;
+	margin-left: 100px;
+}

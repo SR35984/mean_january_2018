@@ -1,0 +1,17 @@
+div{
+	display:inline-block;
+	background-color: saddlebrown;
+	height:70px;
+	width:70px;
+	border-style: solid;
+	margin: 1px;
+}
+button{
+	height:50px;
+	width:50px;
+	background-color:green;
+	margin: 10px;
+}
+button.off{
+	background-color:red;
+}

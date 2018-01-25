@@ -1,0 +1,46 @@
+<h1>{{ title }}</h1>
+
+<h2>Add a Quote</h2>
+<form
+  (submit)="onSubmit()"
+>
+  <textarea 
+    cols="50"
+    rows="5"
+    name="quote"
+    required
+    minlength="4"
+    [(ngModel)]="quote.content"
+    #content='ngModel'
+  ></textarea>{{ content.errors | json }}<br>
+  <label class="label">Author</label>
+  <input 
+    type="text" 
+    name="author" 
+    required 
+    minlength="1"
+    [(ngModel)]="quote.author"
+    #author='ngModel'
+  />{{ author.errors | json }}<br>
+  <input 
+  [disabled]=""
+  class="add" 
+  type="submit" 
+  value="Add Quote">
+</form>
+
+<h2>Quotes List</h2>
+<div class="box" *ngFor="let quote of quotes; let i = index">
+  <div class="quotes">
+    <p>"{{ quote.content }}"</p>
+    <p>-{{ quote.author }}</p>
+  </div>
+  <div class="votes">
+    <h2>{{ quote.votes }}</h2>
+  </div>
+  <div class="b">
+    <button class="buttons" (click)="votes('up',i)">Vote Up</button><br>
+    <button class="buttons" (click)="votes('down',i)">Vote Down</button><br>
+    <button class="buttons" (click)="delete(i)">Delete</button>
+  </div>
+</div>

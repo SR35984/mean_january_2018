@@ -1,0 +1,19 @@
+.reg{
+	text-align: center;
+	border-style: solid;
+}
+
+.acct{
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.button{
+	text-align: center;
+	width: 900px;
+}
+
+.form{
+	text-align: center;
+}
